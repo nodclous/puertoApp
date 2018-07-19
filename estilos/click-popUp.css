@@ -1,0 +1,236 @@
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    min-height: auto;
+}
+
+.has-error .help-block, .has-error .form-control{
+	color: #d9534f;
+	border-color: #d9534f;
+}
+
+.has-error .form-control:focus {
+    border-color: #d9534f;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #d9534f;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 6px #d9534f;
+}
+
+
+.click-popUp{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+
+.click-popUp.active{
+	opacity: 1;
+}
+
+.click-popUp .body-popUp{
+	max-width: 550px;
+	max-height: 100vh;
+	overflow-y: auto;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.rightText{
+	text-align: right;
+	width: 100%;
+}
+
+.click-popUp .viewLayout , .click-popUp .editLayout, .click-popUp .addLayout, .click-popUp .deletedLayout {
+	background-color: #fff;
+	color: #606060;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.2s,top .4s;
+	z-index: 10;
+	top: -100%;
+}
+
+.click-popUp .viewLayout.active , .click-popUp .editLayout.active, .click-popUp .addLayout.active, .click-popUp .deletedLayout.active {
+	opacity: 1;
+	z-index: 20;
+	top: 5px;
+}
+
+.popUp-panel{
+	margin-bottom: 20px;
+}
+
+.data-name, .data-type{
+	font-weight: 600;
+	text-align: center;
+	color: #0f5c7e;
+}
+
+.click-popUp .viewLayout .col-sm-8{
+	border-bottom: 1px solid #0f5c7e;
+}
+
+.click-popUp label{
+	padding: 6px 0px;
+}
+
+.data-type{
+	margin-bottom: -5px;
+}
+
+.closeIcon{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+    font-weight: 600;
+	text-align: center;
+	color: #0f5c7e;
+}
+
+.closeIcon:hover{
+	cursor: pointer;
+}
+
+.button-panel{
+	position: relative;
+	height: 40px;
+	margin: 20px 0px;
+}
+
+.click-confirmationPopUp{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 25;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+
+.confirmationPopUp {
+	border-color: #6f6f6f;
+	position: absolute;
+	right: 50%;
+	top: 40px;
+	transform: translate(50%);
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 10px 5px #626161;
+	min-width: 310px;
+}
+
+.request-panel{
+	padding: 30px 10px 0px 20px;
+}
+
+#messageRequest{
+	font-size: 16px;
+	color: #004e71;
+	font-weight: 600;
+}
+
+#warningRequest{
+	font-size: 14px;
+	color: #5f5f5f;
+}
+
+.request-button-panel{
+	padding: 20px 0;
+}
+
+
+.click-popUp .click-confirmationPopUp .blocking-screen{
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+
+.btn-coronel{
+	background-color: #0f5c7e;
+	color: #fffcfc;
+	font-weight: 600;
+	width: 100px;
+	border-radius: 50px;
+}
+
+.btn-coronel:hover{
+	color: #fff9f9;
+	background-color: #043044;
+	border-color: #adadad;
+	box-shadow: 0px 3px 5px #0a3d54b3;
+}
+
+.btn-coronel:active{
+	color: #fff9f9;
+	background-color: #043044;
+	border-color: #adadad;
+	box-shadow: 0px 3px 5px #0a3d54b3;
+}
+
+.btn-coronel:focus{
+	background-color: #043044;
+	color: #fffcfc;
+	border-color: #adadad;
+	box-shadow: 0px 3px 5px #0a3d54b3;
+
+}
+
+.btn-left{
+	position: absolute;
+	right: 50%;
+	transform: translateX(-100%);
+}
+
+.btn-center{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn-right{
+	position: absolute;
+	right: 50%;
+	transform: translateX(200%);
+}
+
+.deletedItem{
+	background-color: #d9534f;
+	color: #fff;
+	font-weight: 600;
+	padding: 5px 10px;
+	border: 12px inset #fcfcfc;
+}
+
+.restoreElement, .remove4EVER{
+	font-size: 30px;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.remove4EVER{
+	color: #ffafaf;
+}
+
+.restoreElement{
+	color: #79ff9c;
+	right: 50px;
+}
+
+.element-props{
+	font-size: 10px;
+}

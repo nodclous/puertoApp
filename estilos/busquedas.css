@@ -1,0 +1,132 @@
+
+.datos_busqueda::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.datos_busqueda::-webkit-scrollbar
+{
+	width: 11px;
+	background-color: #3c404b;
+}
+
+.datos_busqueda::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #3c404b;
+}
+
+
+.body{
+  margin-top: 10px;
+
+    width: 100%;
+  height: 560px;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+.ingresos_busqueda{
+  width: 100%;
+  height: 25%;
+
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-radius: 3px 3px 2px 2px;
+}
+
+tbody {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+td {
+    text-overflow: ellipsis;
+}
+
+/*Use the following to make sure cols align correctly*/
+table, tr, th, td {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.bodyResult{
+  margin-bottom: 0px;
+}
+
+thead{
+  padding-right: 1.8%;
+  border-collapse: separate;
+  background-color: #292b2c;
+}
+
+.titulo_busqueda{
+  background-color: #292b2c;
+  border-radius: 3px 3px 2px 2px;
+  color: #fff;
+  height: 40px;
+	text-align: center;
+}
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
+  padding: 0.75rem;
+}
+hr{
+  margin: 3px;
+}
+.titulo_busqueda>h3{
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top:7px;
+  font-weight:600;
+  font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.datos_busqueda{
+width: 100%;
+height: 60%;
+color: #fff;
+margin-top: 90px;
+}
+
+
+.form-busqueda{
+  display: block;
+  width: 70%;
+  margin: 0px auto 15px auto;
+}
+.resultado_dato{
+  width: 100%;
+  height: auto;
+}
+.input_ingresos{
+  padding: 0px;
+  height: 100%;
+  padding-top: 30px;
+}
+.bg-primary{
+  background-color: #115d7f;
+}
+
+.bg-oscuro{
+  background-color: #292b2c;
+}
+
+.bg-primary:hover{
+  background-color: #04405c;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+.bg-oscuro:hover{
+  background-color: #292b2c;
+}
+
+.search{
+  background-color: #292b2c;
+}

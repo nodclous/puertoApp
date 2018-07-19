@@ -1,0 +1,68 @@
+#titulo_nave{
+  width: 10%;
+  text-align: center;
+}
+#buscador_select{
+  width: 50%;
+  text-align: left;
+}
+#panel-usuarios , #panel-rotaciones, #panel-naves{
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+#select_nave{
+  width: 100%;
+}
+#buscar_nave{
+  padding:20px 10px;
+}
+.type-bots{
+  padding:6px 12px;
+  height: 34px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+#insert_finish{
+  text-align: center;
+  display: none;
+}
+#insert_finish>img{
+  height: 150px;
+
+}
+.dblock{
+  display: inline-block;
+}
+/* POPPUP DE INGRESAR */
+input{
+  width: 100%;
+}
+.agregar-input{
+  width: 60%;
+  display: inline;
+}
+.agregar-label{
+  width: 20%;
+}
+.agregar{
+  margin: 15px 0px 15px 35px ;
+}
+#datos_nave{
+  display: none;
+}
+
+.btn-lg{
+  margin-right: 4px;
+  background-color: #115d7f;
+  padding: 1px 5px;
+}
+
+.btn-ok{
+  background-color: #76FF03;
+}
+
+.btn-cancel{
+  background-color: #D50000;
+}

@@ -1,0 +1,109 @@
+
+
+@keyframes loading {
+  0%{  transform: rotate(360deg);}
+  100%{  transform: rotate(0deg);}
+}
+#logo{
+  position: absolute;
+  left: 0;
+  width: 170px;
+}
+#cargando{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: calc(50% - 150px );
+  left: calc(50% - 50px);
+  animation:loading 1s infinite;
+}
+#cargando_pdf{
+  display: none;
+}
+#cargando_text{
+  opacity: 0;
+
+  font-size: 30px;
+  position: absolute;
+  top: calc(50% - 30px );
+  left: calc(50% - 100px);
+}
+
+  /*DIV QUE CONTIENE TODOS LOS TIER CON Sus RESPECTIVOS DATOS.*/
+#ordenamientos{
+  margin-left: 30px;
+}
+/*CLASE QUE CONTIENE EL RECTANGULO (TIER) Y SUS DIMENSIONES  */
+.dibujo1_tier{
+    width: 1070px;
+}
+/*CLASE DE DIBUJODE LOS TIER*/
+.dibujo_tier{
+  outline: 1px solid;
+  width: 980px;
+  height: 473px;
+  padding: 0;
+  display: inline-block;
+}
+
+/*ROTACION DEL TEXTO DEL LARGO*/
+.largo_tier>p{
+
+  font-weight: bold;
+  margin: 0;
+  font-family: sans-serif;
+}
+/*NUMERO AL LADO DERECHO DEL TIER*/
+.largo_tier{
+    transform: rotate(-90deg);
+  display: inline-block;
+  position:relative;
+  top: -250px;
+  left: 0px;
+}
+/*TEXTO ABAJO DEL RECTANGULO INDICANDO EL ANCHO*/
+.ancho_tier>p{
+  margin: 0;
+  text-align: center;
+  position: relative;
+  left: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/*CLASE DE LINGAS QUE NO ESTAN GIRADAS*/
+.cant_unit_sin_giro{
+  margin: auto;
+  position: relative;
+  top: 40%;
+}
+/*CLASE DE LINGAS GIRADAS*/
+.cant_unit_con_giro{
+  margin: auto;
+  position: relative;
+  top: 40%;
+  transform: rotate(-90deg);
+}
+.titulo{
+  text-align: center;
+}
+/*BOTONES DE IMPRIMIR Y SELECCIONAR LINGAS */
+#btn-pdf , #select{
+  background: #eee;
+  width: 300px;
+}
+#btn-pdf:hover , #select:hover{
+  background: #e6e2e2;
+}
+/*MODIFICANDO MARGENCLASE CONTAINER DE BOOTSTRAP */
+.container{
+margin: 0;
+}
+/*MODIFICANDO PADDING DE TABLAS DE BOOTSTRAP*/
+.table>tbody>tr>th,
+.table>tbody>tr>td{
+    padding: 4px;
+}
+/*TABLA DE DATOS DEL TIER*/
+.dat{
+  width: 40%;
+}

@@ -1,0 +1,298 @@
+body{
+  background-color: #eee;
+}
+
+.container{
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.pre-footer img{
+  width: 120px;
+  padding-top: 20px;
+}
+
+footer{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 15px 0px;
+  background: #0f5c7e;
+  font-size: 13px;
+}
+
+.checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
+    margin-top: 0;
+    margin-left: 0px;
+}
+
+.search-body{
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+
+.ingresos_busqueda{
+  width: 100%;
+  height: auto;
+}
+
+.titulo_busqueda{
+  border-radius: 3px 3px 2px 2px;
+  color: #0f5c7e;
+  height: auto;
+	text-align: left;
+  padding-left: 15px;
+}
+
+.search{
+    padding: 20px 0px 5px 10px;
+    position: relative;
+}
+
+.nameSearch{
+  display: inline-block;
+  padding: 10px 0px;
+}
+
+.total-registros{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.action-popUp{
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  opacity: 0;
+  max-width: 500px;
+}
+
+.action-popUp .alert-danger{
+  margin-top: 0px;
+}
+
+.action-popUp.active{
+  animation: actionPopUp 6s forwards;
+}
+
+@keyframes actionPopUp {
+    10%  {opacity: 1; top:40px}
+    90%  {opacity: 1; top:40px}
+    100% {opacity: 0; top:-10%}
+}
+
+.success{
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  color: #fff;
+}
+
+.danger{
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: #fff;
+}
+.actionMSG{
+  padding: 15px;
+  font-size: 14px;
+  box-shadow: 0px 5px 10px #0f3c0f;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+  border-radius: 50px;
+}
+
+.actionMSG span{
+  font-size: 20px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
+  padding: 0.5rem;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-radius: 3px 3px 2px 2px;
+}
+
+.bodyResult {
+    display: block;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+td {
+    text-overflow: ellipsis;
+}
+
+/*Use the following to make sure cols align correctly*/
+table, tr, th, td {
+    border-collapse: collapse;
+    text-align: left;
+    padding-left: 4px;
+}
+
+thead > tr > th:first-child, .bodyResult > tbody > tr > td:first-child {
+    width: 40px;
+}
+
+thead{
+  padding-right: 1.8%;
+  background-color: #fff;
+  border-bottom: 3px solid #eee;
+  border-top: 3px solid #eee;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+hr{
+  margin: 3px;
+  border-top: 3px solid #eee;
+}
+
+.titulo_busqueda>h3{
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top:7px;
+  font-weight:600;
+  font-family:  "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.datos_busqueda{
+  width: 100%;
+  height: 600px;
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.dato_resultado{
+  height: 550px;
+}
+
+.form-busqueda{
+  display: block;
+  width: 70%;
+  margin: 15px auto 15px auto;
+}
+
+.radioBox-options{
+  margin: 15px auto 15px auto;
+  width: 90%;
+}
+
+.radioBox-options label{
+  border-radius: 4px;
+  padding: 5px 25px;
+  width: 100%;
+  margin-right: 20px;
+  max-width: 160px;
+}
+
+.radioBox-options label.is-checked{
+  background: linear-gradient(to right, #ffa100 0%,#ff9000 100%);
+  color: #fff;
+  font-style: italic;
+  font-weight: 600;
+  box-shadow: 0px 0px 5px #cf9003;
+}
+
+
+.resultado_dato{
+  width: 100%;
+  height: auto;
+}
+
+.input_ingresos{
+  padding: 15px;
+  height: auto;
+}
+
+.bg-primary{
+	background-color: #0f5c7e;
+}
+
+.bg-oscuro{
+  background-color: #fff;
+  color: #717171;
+}
+
+.bodyResult .bg-primary:hover{
+  cursor: pointer;
+}
+.bg-primary:hover{
+	background-color: #003d59;
+}
+.bg-oscuro:hover{
+  background-color: #fff;
+}
+
+.btn-add, .btn-eliminados{
+  float: right;
+  font-weight: 600;
+  width: 90px;
+}
+
+.btn-eliminados{
+  margin-right: 10px;
+}
+
+
+.btn-container{
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+}
+
+.input-bodega1{
+  width: 39%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.input-bodega2{
+  width: 53%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.btn-back{
+  left: 35%;
+}
+
+.first-title{
+  margin-left: 187px;
+  margin-right: 31px;
+
+}
+
+.titulos span{
+    font-weight: 700;
+
+}
+
+.titulos{
+    margin-bottom: 5px;
+}
+
+.first-title-tier{
+  margin-left: 206px;
+  margin-right: 76px;
+}

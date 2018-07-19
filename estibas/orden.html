@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" id="ea">
+<head>
+	<meta charset="UTF-8">
+	<title>buque</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estiloOrder.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+		<script type="text/javascript" src="jsPDF-master/dist/jspdf.debug.js"></script>
+		<script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.2/jspdf.plugin.autotable.js"> </script>
+		<script src="ordenamiento.js"></script>
+
+</head>
+<body>
+	<div id="cargando_pdf">
+		<div id="cargando_position">
+			<img src="../imagenes/loading.png" id="cargando" width="300px">
+			<p id="cargando_text">Generando PDF..</p>
+		</div>
+
+	</div>
+		<div class=" container " id="container">
+	<!-- BOTONES ARRIBA DE LA PAGINA -->
+  <button type="button" class="btn" id="btn-pdf" onclick="imprimir_ratita()">GENERAR PDF</button>
+	<button type="button" class="btn" onclick="solo_tier_con_carga()" id="select" name="button">SELECCION</button>
+	<button type="button" class="btn" id="btn-pdf" onclick=" plano()">PLANO GENERAL</button>
+	<!-- <button type="button" class="btn" id="new-pdf" onclick="getUrl()" name="button">NEW PDF</button> -->
+
+
+	  <div id="todo">
+			<!-- EL TITULO DE LA NAVE -->
+				<div class="titulo">
+							<h2>
+								<spam id="nombre">	</spam>
+								<spam id="nave">	</spam>
+							</h2>
+							<br>
+				</div>
+
+			<!-- DIV PADRE DONDE ESTARAN TODAS LAS ORDENACIONES CON SUS DATOS -->
+				<div class="ordenamiento" id="ordenamientos">
+				</div>
+  	</div>
+</div>
+</body>
+</html>

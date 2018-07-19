@@ -1,0 +1,54 @@
+.navbar-default .navbar-nav>li>a{
+  color:#115d7f;
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  /*color:#ff9f00 ;*/
+  /*background-color: #115d7f;*/
+    color:#115d7f;
+  font-weight:600;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  /*color:#ff9f00 ;*/
+  /*background-color: #115d7f;*/
+    color:#115d7f;
+  font-weight:600;
+  background-color: #e3e3e3;
+}
+.navbar{
+ background-color: #fff;
+ z-index:10;
+}
+.container{
+  padding: 0;
+}
+.collapse{
+  position: absolute;
+  right: 0;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  background-color: #fff;
+  /*background-color: #ff9f00;*/
+}
+.dropdown>.final{
+  position: absolute;
+  right: 0;
+  left:inherit;
+  float: right;
+
+}
+
+@media screen and (max-width:768px) {
+  .collapse{
+    position: relative;
+  }
+}
+
+div .Abajo-izq p{
+  border: 1px solid #CCCCCC;
+  padding: 5px;
+  background-color: #FFFFFF;
+}
+}
